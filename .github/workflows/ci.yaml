@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        with:
-         path: Dockerfile
+      - name: Build
+        uses: docker/build-push-action@v6
         
 
   
